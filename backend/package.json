@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "deploy": "heroku builds:create -a quasargram-jason-backend-2024",
+    "web-push": "web-push"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "busboy": "^0.3.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "firebase-admin": "^12.3.1",
+    "mongoose": "^8.7.0",
+    "nodemon": "^3.1.4",
+    "os": "^0.1.2",
+    "uuid-v4": "^0.1.0",
+    "web-push": "^3.6.7"
+  }
+}

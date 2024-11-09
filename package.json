@@ -1,0 +1,49 @@
+{
+  "name": "quasar-project",
+  "version": "0.0.1",
+  "description": "A Quasar Framework app",
+  "productName": "quasargram",
+  "author": "JasonGITHUB <Jasonvirtualai@gmail.com>",
+  "private": true,
+  "scripts": {
+    "icons": "icongenie generate -i app-icon.png --skip-trim --theme-color 212121",
+    "dev": "quasar dev",
+    "build": "quasar build",
+    "deploy": "quasar build -m pwa && firebase deploy"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.12",
+    "axios": "^1.7.7",
+    "core-js": "^3.6.5",
+    "dotenv": "^16.4.5",
+    "firebase": "^10.14.1",
+    "glob": "^11.0.0",
+    "idb": "^8.0.0",
+    "md-gum-polyfill": "^1.0.0",
+    "pinia": "^2.2.4",
+    "quasar": "^1.0.0",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@quasar/app": "^2.0.0",
+    "sass": "^1.78.0",
+    "workbox-webpack-plugin": "^5.1.4"
+  },
+  "browserslist": [
+    "ie >= 11",
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
+  ],
+  "engines": {
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}
