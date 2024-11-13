@@ -106,8 +106,8 @@ dbMongo.once("open", function () {
 */
 webpush.setVapidDetails(
   "mailto:test@test.com",
-  "BL7KqJ0PBikP5VBeXL9yP5_nktP_8WA2yUjBiXYaJVJd-vFeP2VWy-fntOc3Z3rAKDGjC0EYnY5bN1ipIZvdqvo", // public key
-  "-T7LbUhzERsyUwYkeO7JiLIj8bCT32kBCde1g5dWrA0" // private key
+  process.env.VUE_APP_WEBPUSH_PUBLIC_KEY, // public key from .env
+  process.env.VUE_APP_WEBPUSH_PRIVATE_KEY // private key from .env
 );
 
 /*
